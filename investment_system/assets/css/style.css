@@ -1,0 +1,32 @@
+ :root{--ink:#17233b;--muted:#68758b;--blue:#2457d6;--navy:#13284b;--surface:#fff;--line:#e3e9f2}
+*{box-sizing:border-box}
+body{min-height:100vh;background:#f4f7fb;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+.app-nav{background:linear-gradient(110deg,#14294d,#2457d6);box-shadow:0 3px 16px #16284a22}
+.navbar-brand{letter-spacing:.2px}
+main{min-height:calc(100vh - 150px)}
+.hero{color:#fff;background:linear-gradient(125deg,#14294d 0%,#2457d6 70%,#18a58b 130%);box-shadow:0 18px 45px #203f7720}
+.eyebrow{font-size:.73rem;font-weight:800;letter-spacing:.14em;color:#4e6c9e}
+.hero .eyebrow{color:#b9d1ff}
+.hero-stat{padding:2rem;border:1px solid #ffffff35;background:#ffffff12;border-radius:1.25rem;backdrop-filter:blur(8px)}
+.info-card,.content-card,.form-card,.metric-card,.news-card{background:var(--surface);border:1px solid var(--line);border-radius:1rem;box-shadow:0 8px 24px #18305b08}
+.info-card,.content-card,.news-card{padding:1.35rem}
+.info-card h3{font-size:1.08rem;font-weight:750}
+.info-card p{color:var(--muted);margin:0}
+.auth-wrap{min-height:65vh;display:flex;align-items:center;justify-content:center;padding:1.25rem 0}
+.form-card{width:100%;max-width:480px;padding:clamp(1.4rem,4vw,2.2rem)}
+.form-control,.form-select{border-color:#d7dfeb;min-height:45px}
+.form-control:focus,.form-select:focus{border-color:#6c8fe9;box-shadow:0 0 0 .2rem #2457d61c}
+.btn-primary{background:var(--blue);border-color:var(--blue)}
+.btn-primary:hover{background:#173fa8;border-color:#173fa8}
+.metric-card{padding:1.25rem;height:100%}
+.metric-label{font-size:.88rem;color:var(--muted)}
+.metric-value{font-size:2rem;font-weight:800;margin-top:.3rem}
+.metric-date{font-size:1.35rem}
+.chart-wrap{position:relative;height:310px}
+.code-input{letter-spacing:.5rem;font-size:1.5rem}
+.table{--bs-table-bg:transparent}
+.table thead th{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:#69768a;white-space:nowrap}
+.news-card h3,.news-card h2{font-weight:750}
+.site-footer{background:#fff;border-top:1px solid var(--line);color:var(--muted)}
+.admin-head{padding:1rem 1.2rem;background:#fff;border:1px solid var(--line);border-radius:1rem}
+@media(max-width:575px){.hero-stat{padding:1.25rem}.chart-wrap{height:260px}.admin-head .btn{margin-bottom:.25rem}}
